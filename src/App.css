@@ -1,0 +1,48 @@
+#root {
+  margin: 0;
+}
+
+body {
+  background-color: #13181d;
+  margin: 0;
+}
+
+
+.logo {
+  height: 180px;
+  width: 230px;
+  margin-top: -45px;
+  margin-left: -40px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.background {
+  width: 1915px;
+  height: 80px;
+  margin-top: -480px;
+  background-color: #202830;
+  border: 2px solid #2E3A49;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -55px;
+  margin-right: 600px;
+  gap: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.buttons a {
+  color: white;
+}
