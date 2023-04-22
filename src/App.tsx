@@ -13,14 +13,20 @@ function App() {
             </div>
             
             <div className='buttons'>
-              <a>
+              <a href=''>
                 EQUIPE
               </a>
-              <a>
+              <a href=''>
                 SOBRE
               </a>
-              <a>
+              <a href=''>
                 CURSOS
+              </a>
+             </div>
+                
+            <div className='login'>
+               <a href=''>
+                ENTRAR
               </a>
             </div>
           </header>
