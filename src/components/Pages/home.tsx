@@ -1,22 +1,19 @@
-import startLogo from "../../assets/logo765.png";
 import "../../App.css";
 
 export function Home() {
   return (
-    <header>
-      <div className="background">
-        <img src={startLogo} className="logo" alt="DevStart Logo" />
-      </div>
+      <section id="main">
+        <section className="left-sec">
 
-      <div className="buttons">
-        <a href="">EQUIPE</a>
-        <a href="">SOBRE</a>
-        <a href="">CURSOS</a>
-      </div>
+        </section>
 
-      <div className="login">
-        <a href="">ENTRAR</a>
-      </div>
-    </header>
+        <section className="mid-sec">
+
+        </section>
+           
+        <section className="right-sec">
+
+        </section>
+      </section>
   );
 }
