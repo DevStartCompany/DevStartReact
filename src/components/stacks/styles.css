@@ -1,0 +1,38 @@
+.stacksContainer {
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-around;
+    width: 130px;
+    margin-left: 70px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.svg {
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+
+.yellow {
+    border: 2px solid yellow;
+}
+
+.green {
+    border: 2px solid #15BE4F;
+}
+
+.blue {
+    border: 2px solid #007DD8;
+}
+
+.pink {
+    border: 2px solid #C565C7;
+}
+
+.orange {
+ border: 2px solid #EC7D2D;
+} 
