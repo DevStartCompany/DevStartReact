@@ -9,9 +9,9 @@ interface StacksProps{
 
 export function Stacks({content, color, icon}:StacksProps) {
     return (
-        <div>
+        <div className={`stacksContainer ${color}`}>
             {icon}
-            <p className={`stacksContainer ${color}`}>{content}</p>
+            <p>{content}</p>
         </div>
         
     )

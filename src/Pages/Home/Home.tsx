@@ -2,7 +2,7 @@ import "../../App.css";
 import userLogo from "../../assets/user.png"
 import { BtnNavigation } from "../../components/btn-navigation";
 import { Stacks } from "../../components/stacks";
-import PhosphorIcons from "phosphor-react";
+import * as PhosphorIcons from "phosphor-react";
 
 export function Home() {
   return (
@@ -37,11 +37,11 @@ export function Home() {
 
         <p className="cursos-title">Cursos</p>
         <div className="flex stacks">
-        <Stacks  color="yellow" content="Front End" icon={undefined}/>
-        <Stacks color="green" content="Back End" icon={undefined}/>
-        <Stacks color="blue" content="DevOps" icon={undefined}/>
-        <Stacks color="pink" content="Data Science" icon={undefined} />
-        <Stacks color="orange" content="Cyber Security" icon={undefined}/>
+        <Stacks color="yellow" content="Front End" icon={<PhosphorIcons.Browsers size={32}/>}/>
+        <Stacks color="green" content="Back End" icon={<PhosphorIcons.HardDrives size={32}/>}/>
+        <Stacks color="blue" content="DevOps" icon={<PhosphorIcons.Cloud size={32}/>}/>
+        <Stacks color="pink" content="Data Science" icon={<PhosphorIcons.TreeStructure size={32}/>} />
+        <Stacks color="orange" content="Cyber Security" icon={<PhosphorIcons.ShieldCheck  size={32}/>}/>
         </div>
         </section>
 
