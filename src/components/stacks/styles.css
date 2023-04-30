@@ -7,7 +7,6 @@
     color: white;
     padding: 10px;
     cursor: pointer;
-
 }
 
 .svg {
@@ -19,20 +18,50 @@
 
 .yellow {
     border: 2px solid yellow;
+    stroke-width: 0;
+}
+
+.yellow:hover {
+    transform: scale(1.15);
+    transition: all 1s ease;
 }
 
 .green {
     border: 2px solid #15BE4F;
+    stroke-width: 0;
+}
+
+.green:hover {
+    transform: scale(1.15);
+    transition: all 1s ease;
 }
 
 .blue {
     border: 2px solid #007DD8;
+    stroke-width: 0;
+}
+
+.blue:hover {
+    transform: scale(1.15);
+    transition: all 1s ease;
 }
 
 .pink {
     border: 2px solid #C565C7;
+    stroke-width: 0;
+}
+
+.pink:hover {
+    transform: scale(1.15);
+    transition: all 1s ease;
 }
 
 .orange {
  border: 2px solid #EC7D2D;
+ stroke-width: 0;
 } 
+
+.orange:hover {
+    transform: scale(1.15);
+    transition: all 1s ease;
+}
