@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import { Camera } from "phosphor-react";
 import { Link } from "react-router-dom";
-import DevStartLogo from "../../assets/devstart-logo.png";
+// import DevStartLogo from "../../assets/devstart-logo.png";
 import styles from "./styles.module.css";
 import { toBase64 } from "../../utils/toBase64";
 
