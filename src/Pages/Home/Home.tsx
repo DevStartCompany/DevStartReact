@@ -9,7 +9,7 @@ export function Home() {
 
 const token = localStorage.getItem("token");
 if (!token) {
-  window.location.replace("https://twitch.tv")
+  window.location.replace("https://dev-start-react.vercel.app/entrar")
 } else {
   window.location.replace("https://dev-start-react.vercel.app/")
 }
