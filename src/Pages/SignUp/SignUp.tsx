@@ -52,7 +52,7 @@ export function SignUp() {
 
         <label className={styles.text_form_field}>
           Email
-          <input className={styles.text_input} />
+          <input type="email" className={styles.text_input} />
         </label>
 
         <label className={styles.text_form_field}>
