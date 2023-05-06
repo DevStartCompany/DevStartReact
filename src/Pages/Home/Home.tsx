@@ -3,16 +3,15 @@ import userLogo from "../../assets/user.png";
 import { BtnNavigation } from "../../components/btn-navigation";
 import { Stacks } from "../../components/stacks";
 import * as PhosphorIcons from "phosphor-react";
-
+import { useNavigate } from "react-router-dom";
 
 export function Home() {
-
+const navigate = useNavigate()
 const token = localStorage.getItem("token");
 if (!token) {
-  window.location.replace("https://dev-start-react.vercel.app/entrar")
-} else {
-  window.location.replace("https://dev-start-react.vercel.app/")
+  navigate('/entrar')
 }
+
 
   return (
     <section id="main">
@@ -75,4 +74,5 @@ if (!token) {
       <section className="right-sec"></section>
     </section>
   );
+
 }

@@ -8,12 +8,12 @@ export function SignIn() {
 
       <form>
         <label className={styles.text_form_field}>
-          email
+          Email
           <input className={styles.text_input} />
         </label>
 
         <label className={styles.text_form_field}>
-          senha
+          Senha
           <input className={styles.text_input} type="password" />
         </label>
         <div className={styles.footer_form}>
