@@ -1,28 +1,35 @@
 import { Link } from "react-router-dom";
-import styles from "./styles.module.css";
+// import styles from "./styles.module.css";
+import {
+  Form,
+  FooterForm,
+  SignInContainer,
+  SubmitButton,
+  TextFormField,
+  TextInput,
+  Title,
+} from "./styles";
 
 export function SignIn() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Entrar</h1>
+    <SignInContainer>
+      <Title>Entrar</Title>
 
-      <form>
-        <label className={styles.text_form_field}>
+      <Form>
+        <TextFormField>
           Email
-          <input className={styles.text_input} />
-        </label>
+          <TextInput />
+        </TextFormField>
 
-        <label className={styles.text_form_field}>
+        <TextFormField>
           Senha
-          <input className={styles.text_input} type="password" />
-        </label>
-        <div className={styles.footer_form}>
+          <TextInput />
+        </TextFormField>
+        <FooterForm>
           <Link to={"/criar-conta"}>Ainda não tenho uma conta</Link>
-          <button className={styles.submit_button} type="submit">
-            Criar conta
-          </button>
-        </div>
-      </form>
-    </div>
+          <SubmitButton>Criar conta</SubmitButton>
+        </FooterForm>
+      </Form>
+    </SignInContainer>
   );
 }

@@ -1,48 +1,61 @@
-import "./styles.css";
+// import "./styles.css";
 import userLogo from "../../assets/user.png";
 import { BtnNavigation } from "../../components/btn-navigation";
 import { Stacks } from "../../components/stacks";
 import * as PhosphorIcons from "phosphor-react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import {
+  HomeContainer,
+  LeftSection,
+  UserDiv,
+  UserInfo,
+  MindSec,
+  UserLogo,
+  UserInfo2,
+  UserInfoText,
+  CourseTitle,
+  StacksField,
+  MindUserInformation,
+} from "./styles";
+// import { Header } from "../../components/Header";
 
 export function Home() {
-const navigate = useNavigate()
-const token = localStorage.getItem("token");
-if (!token) {
-  navigate('/entrar')
-}
-
+  // const navigate = useNavigate();
+  // const token = localStorage.getItem("token");
+  // if (!token) {
+  //   navigate("/entrar");
+  // }
 
   return (
-    <section id="main">
-      <section className="left-sec">
-        <div className="flex userdiv">
-          <img className="userlogo" src={userLogo} />
-          <div className="userinfo column">
+    <HomeContainer>
+      <LeftSection>
+        <UserDiv>
+          <img src={userLogo} />
+          <UserInfo>
             <p className="username">NOME</p>
             <p className="userlogin">USUÁRIO</p>
-          </div>
-        </div>
-        <div className="btn-navigation">
+          </UserInfo>
+        </UserDiv>
+        <div>
           <BtnNavigation content="Principal" />
           <BtnNavigation content="Cursos pendentes" />
           <BtnNavigation content="Perfil" />
           <BtnNavigation content="Configurações" />
           <BtnNavigation content="Logout" />
         </div>
-      </section>
+      </LeftSection>
 
-      <section className="mid-sec">
-        <div className="flex mid2">
-          <img className="userlogo" src={userLogo} />
-          <div className="userinfo-2">
-            <p className="hello">Bem vindo,</p>
-            <p className="username2">NOME</p>
-          </div>
-        </div>
+      <MindSec>
+        <MindUserInformation>
+          <UserLogo src={userLogo} />
+          <UserInfo2>
+            <UserInfoText typeOfText={"hello"}>Bem vindo,</UserInfoText>
+            <UserInfoText typeOfText={"username"}>NOME</UserInfoText>
+          </UserInfo2>
+        </MindUserInformation>
 
-        <p className="cursos-title">Cursos</p>
-        <div className="flex stacks">
+        <CourseTitle>Cursos</CourseTitle>
+        <StacksField>
           <Stacks
             color="yellow"
             content="Front End"
@@ -68,11 +81,10 @@ if (!token) {
             content="Cyber Security"
             icon={<PhosphorIcons.ShieldCheck size={32} />}
           />
-        </div>
-      </section>
+        </StacksField>
+      </MindSec>
 
       <section className="right-sec"></section>
-    </section>
+    </HomeContainer>
   );
-
 }
