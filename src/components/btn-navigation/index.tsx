@@ -1,16 +1,18 @@
-import "./styles.css"
+import { Button, ButtonNavigationContainer } from "./styles";
 
-interface BtnNavigationProps{
-    img?:string
-    content:string
-    alt?:string
+// import "./styles.css"
+
+interface BtnNavigationProps {
+  img?: string;
+  content: string;
+  alt?: string;
 }
 
-export function BtnNavigation({img, content, alt=""}:BtnNavigationProps) {
-    return (
-        <div className="btn-navigation">
-            {img? <img src={img} alt={alt} /> : null}
-            <h1 className="btn-1">{content}</h1>
-        </div>
-    )
-} 
+export function BtnNavigation({ img, content, alt = "" }: BtnNavigationProps) {
+  return (
+    <ButtonNavigationContainer>
+      {img ? <img src={img} alt={alt} /> : null}
+      <Button>{content}</Button>
+    </ButtonNavigationContainer>
+  );
+}
