@@ -5,11 +5,10 @@ import { Stacks } from "../../components/stacks";
 import * as PhosphorIcons from "phosphor-react";
 import { useNavigate } from "react-router-dom";
 
-// eslint-disable-next-line react-hooks/rules-of-hooks
-const navigate = useNavigate()
 
 export function Home() {
-
+  
+const navigate = useNavigate()
 const token = localStorage.getItem("token");
 if (!token) {
   navigate('/login', {replace: true})
