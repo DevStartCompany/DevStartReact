@@ -1,14 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home/Home";
-import { Login } from "./Pages/login/Login"
+import { SignUp } from "./Pages/SignUp/SignUp";
+import { PageNotFound } from "./Pages/404";
+import { SignIn } from "./Pages/SignIn";
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/criar-conta" element={<SignUp />} />
+      <Route path="/entrar" element={<SignIn />} />
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
   );
 }
 
