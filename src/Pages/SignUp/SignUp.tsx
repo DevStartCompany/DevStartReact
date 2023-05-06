@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import DevStartLogo from "../../assets/devstart-logo.png";
 import styles from "./styles.module.css";
 import { toBase64 } from "../../utils/toBase64";
+import { SignUpContainer } from "./styles";
 
 export function SignUp() {
   const [avatar, setAvatar] = useState<string | null>(null); //Depois usar no lugar do useState o react-hook-form.
@@ -20,7 +21,7 @@ export function SignUp() {
   }
 
   return (
-    <div className={styles.container}>
+    <SignUpContainer>
       <h1 className={styles.title}>Criar conta</h1>
       {/* <img className="logo" src={DevStartLogo} /> */}
       <form>
@@ -66,6 +67,6 @@ export function SignUp() {
           </button>
         </div>
       </form>
-    </div>
+    </SignUpContainer>
   );
 }
