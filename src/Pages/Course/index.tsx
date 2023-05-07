@@ -1,4 +1,3 @@
-import YouTube from "react-youtube";
 import { loremIpsum } from "../../utils/loremIpsum";
 
 import {
@@ -9,7 +8,6 @@ import {
   VideoPreviewField,
   ModulesField,
   ToolsButton,
-  VideoPlay,
   DescriptionField,
 } from "./styles";
 import { Module } from "./components/Module";

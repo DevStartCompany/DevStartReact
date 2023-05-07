@@ -25,7 +25,7 @@ export function Module() {
             <ul>
               {lessons.map((lesson, index) => {
                 return (
-                  <LessonField>
+                  <LessonField key={index}>
                     <li>{lesson}</li>
                   </LessonField>
                 );
