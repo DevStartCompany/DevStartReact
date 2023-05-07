@@ -1,6 +1,8 @@
 #root {
   margin: 0;
+  box-sizing: border-box;
   font-family: 'Inter';
+  background-color: #13181d;
 }
 
 .flex {
@@ -73,18 +75,18 @@
 
 .userlogin {
   color: #CACACA;
-  margin-top: -15px;
 }
 
 
 .username2 {
-  margin-top: -20px;
   font-size: 24px;
   color: #494949;
 }
 
 .hello {
   font-size: 18px;
+  margin-bottom: -10px;
+  margin-top: 15px;
   color: #909090;
 }
 
@@ -96,6 +98,7 @@
   font-size: 24px;
   color: #6A6868;
   margin-left:70px;
+  margin-top: 70px;
 }
 
 
@@ -117,6 +120,9 @@
   transition: all 0.5s ease;
 }
 
+.stacks {
+  margin-top: 20px;
+}
 
 .course-image {
   background-color: red;
@@ -133,16 +139,19 @@
 
 
 .students {
+  font-size: 14px;
+  color: #6A6868;
   margin-top: -1px;
   margin-left: 3px;
 }
 
 .course-name {
-  margin-top: -5px;
+margin-top: 15px;
 }
 
 .teacher {
   display: flex;
+  margin-top: 15px;
 }
 
 .teacher-image { 
@@ -152,4 +161,5 @@
 
 .teacher-name {
   margin-left: 10px;
+  margin-top: 5px;
 }

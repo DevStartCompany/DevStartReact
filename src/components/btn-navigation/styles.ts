@@ -6,6 +6,7 @@ export const ButtonNavigationContainer = styled("div", {
   marginLeft: "4px",
 });
 
+
 export const Button = styled("h1", {
   fontSize: "20px",
   padding: "15px",
@@ -19,4 +20,9 @@ export const Button = styled("h1", {
   "&:hover": {
     backgroundColor: "#407DD9",
   },
+
+    "& > svg": {
+    marginBottom: "-7px"
+  },
 });
+

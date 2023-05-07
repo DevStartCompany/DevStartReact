@@ -34,7 +34,7 @@ export const StacksContainer = styled("div", {
       },
 
       green: {
-        border: "2px solid yellow",
+        border: "2px solid green",
       },
 
       blue: {
