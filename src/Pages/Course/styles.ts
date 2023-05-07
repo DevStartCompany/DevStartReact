@@ -1,5 +1,4 @@
 import { styled } from "../../styles";
-import YouTube from "react-youtube";
 
 export const CourseContainer = styled("div", {
   display: "grid",
@@ -59,10 +58,6 @@ export const VideoPreviewField = styled("iframe", {
   height: "550px",
 
   backgroundColor: "#2E3A49",
-});
-
-export const VideoPlay = styled(YouTube, {
-  width: "1000",
 });
 
 export const DescriptionField = styled("div", {});
