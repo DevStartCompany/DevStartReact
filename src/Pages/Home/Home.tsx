@@ -3,41 +3,63 @@ import userLogo from "../../assets/user.png";
 import { BtnNavigation } from "../../components/btn-navigation";
 import { Stacks } from "../../components/stacks";
 import * as PhosphorIcons from "phosphor-react";
-import  NestImage  from "../../assets/nest-og.png"
+import NestImage from "../../assets/nest-og.png";
+import {
+  HomeContainer,
+  LeftSection,
+  UserDiv,
+  UserInfo,
+  UserLogo,
+  MindSec,
+} from "./styles";
 
 //import { useNavigate } from "react-router-dom";
 
 export function Home() {
-//const navigate = useNavigate()
-//const token = localStorage.getItem("token");
-//if (!token) {
- // navigate('/entrar')
-//}
-
+  //const navigate = useNavigate()
+  //const token = localStorage.getItem("token");
+  //if (!token) {
+  // navigate('/entrar')
+  //}
 
   return (
-    <section id="main">
-      <section className="left-sec">
-        <div className="flex userdiv">
-          <img className="userlogo" src={userLogo} />
-          <div className="userinfo column">
+    <HomeContainer>
+      <LeftSection>
+        <UserDiv>
+          <UserLogo src={userLogo} />
+          <UserInfo>
             <p className="username">NOME</p>
             <p className="userlogin">USUÁRIO</p>
-          </div>
-        </div>
+          </UserInfo>
+        </UserDiv>
         <div className="btn-navigation">
-          <BtnNavigation icon={<PhosphorIcons.ShieldCheck size={32}/>} content="Principal" />
-          <BtnNavigation icon={<PhosphorIcons.MonitorPlay size={32}/>} content="Cursos pendentes" />
-          <BtnNavigation icon={<PhosphorIcons.UserCircleGear size={32}/>} content="Perfil" />
-          <BtnNavigation icon={<PhosphorIcons.Gear size={32}/>} content="Configurações" />
-          <BtnNavigation icon={<PhosphorIcons.SignOut size={32}/>} content="Logout" />
+          <BtnNavigation
+            icon={<PhosphorIcons.ShieldCheck size={32} />}
+            content="Principal"
+          />
+          <BtnNavigation
+            icon={<PhosphorIcons.MonitorPlay size={32} />}
+            content="Cursos pendentes"
+          />
+          <BtnNavigation
+            icon={<PhosphorIcons.UserCircleGear size={32} />}
+            content="Perfil"
+          />
+          <BtnNavigation
+            icon={<PhosphorIcons.Gear size={32} />}
+            content="Configurações"
+          />
+          <BtnNavigation
+            icon={<PhosphorIcons.SignOut size={32} />}
+            content="Logout"
+          />
         </div>
-      </section>
+      </LeftSection>
 
-      <section className="mid-sec">
+      <MindSec>
         <div className="flex mid2">
-            <img className="userlogo" src={userLogo} />
-            <div className="userinfo-2">
+          <img className="userlogo" src={userLogo} />
+          <div className="userinfo-2">
             <p className="hello">Bem vindo,</p>
             <p className="username2">NOME</p>
           </div>
@@ -72,45 +94,35 @@ export function Home() {
           />
         </div>
 
-
         <div className="courses flex space-around">
-            <div className="course">
-              <img className="course-image cursor" src={NestImage}></img>
-              
-              <div className="course-text">
-                <div className="flex">              
-                  <PhosphorIcons.Users size={24} />
-                  <p className="students ">PuxarBanco Estudantes</p>
-                </div>
+          <div className="course">
+            <img className="course-image cursor" src={NestImage}></img>
 
-                  <h1 className="course-name cursor underline">Curso de PuxarBanco do Básico ao Avançado</h1>
-                    <div className="teacher">
-                      <img className="teacher-image cursor" src={userLogo}></img>
-                      <p className="teacher-name cursor underline">PuxarBanco (Professor)</p>
-                    </div>
-                  </div>
+            <div className="course-text">
+              <div className="flex">
+                <PhosphorIcons.Users size={24} />
+                <p className="students ">PuxarBanco Estudantes</p>
+              </div>
 
+              <h1 className="course-name cursor underline">
+                Curso de PuxarBanco do Básico ao Avançado
+              </h1>
+              <div className="teacher">
+                <img className="teacher-image cursor" src={userLogo}></img>
+                <p className="teacher-name cursor underline">
+                  PuxarBanco (Professor)
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div className="curso-2">
+          <div className="curso-2"></div>
 
-            </div>
-
-            <div className="curso-3">
-
-            </div>
+          <div className="curso-3"></div>
         </div>
-      </section>
+      </MindSec>
 
-      <section className="right-sec">
-
-
-      </section>
-    </section>
-
-    
+      <section className="right-sec"></section>
+    </HomeContainer>
   );
-
-
 }
-
