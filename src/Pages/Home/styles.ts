@@ -5,7 +5,7 @@ export const HomeContainer = styled("section", {
   padding: "20px",
   backgroundColor: "$background",
   width: "100vw",
-  height: "100vh",
+  minHeight: "100vh",
 });
 
 export const LeftSection = styled("section", {

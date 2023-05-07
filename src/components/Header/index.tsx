@@ -16,7 +16,7 @@ export function Header() {
         <RoutersField>
           <a href="">equipe</a>
           <a href="">sobre</a>
-          <a href="">cursos</a>
+          <Link to="/curso">cursos</Link>
         </RoutersField>
 
         <AuthField>
